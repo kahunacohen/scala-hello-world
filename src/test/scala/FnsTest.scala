@@ -19,4 +19,15 @@ class FnsSpec extends org.scalatest.funspec.AnyFunSpec {
       assert(Fns.factorialLoop(3) == 6)
     }
   }
+  describe("factorialLoop") {
+    it("calculates a factorial of 0") {
+      assert(Fns.factorialRecurse(0) == 1)
+    }
+    it("calculates a factorial of 1") {
+      assert(Fns.factorialRecurse(1) == 1)
+    }
+    it("calculates a factorial of a positive integer over 1") {
+      assert(Fns.factorialRecurse(2) == 2)
+    }
+  }
 }
